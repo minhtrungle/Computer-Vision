@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Điểm danh</title>
+  
+  <!-- Nicepage CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }} " media="screen">
+  <link rel="stylesheet" href="{{ url_for('static', filename='Điểm-danh.css') }}" media="screen">
+  <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+  <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-home-page="Điểm-danh.html" data-home-page-title="Điểm danh" class="u-body">
+  <header class="u-clearfix u-grey-15 u-header u-header" id="sec-88c1">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1784" data-image-height="353">
+        <img src="{{ url_for('static', filename='images/3.BVP-Logoviettattienganh.png') }}"
+          class="u-logo-image u-logo-image-1">
+      </a>
+      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </symbol>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="/" style="padding: 10px 20px;">Điểm danh</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="/class-list" style="padding: 10px 20px;">Danh sách lớp</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                href="Liên-hệ.html" style="padding: 10px 20px;">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/"
+                    style="padding: 10px 20px;">Điểm danh</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/class-list"
+                    style="padding: 10px 20px;">Danh sách lớp</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Liên-hệ.html"
+                    style="padding: 10px 20px;">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!------------------------------------ STUDENT LIST --------------------------------------- -->
+  <div class="container px-4 mt-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Họ và tên</th>
+          <th scope="col">Ảnh cung cấp</th>
+          <th scope="col">Encoding face</th>
+          <th scope="col">Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for student in students %}
+        <tr>
+          <th scope="row">{{student['id']}}</th>
+          <td>{{student['name']}}</td>
+          <td><img src="{{student['img']}}" alt="" width="80px" height="100px"></td>
+          <td><textarea name="" id="" cols="30" rows="5">{{student['encoding_face']}}</textarea></td>
+          <td> <button> <a href="{{url_for('diemdanh.delete', id=student['id'])}}">Xoá</a></button> </td>
+        </tr>
+        {% endfor %}
+        <tr>
+          <form method="post" enctype="multipart/form-data">
+            <th scope="row"> + </th>
+            <td> <input type="text" name='name' required> </td>
+            <td> <img id='pre-img' width="80px" height="100px"></img> <input type="file" id="inp"> </td>
+            <td> - </td>
+            <td> <button type="submit">Thêm SV</button> </td>
+            <input type="text" name="img" id="img" hidden>
+          </form>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <pre>
+
+
+
+
+
+
+
+
+
+  </pre>
+
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-532c">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">Trường Đại học Bách Khoa Hà Nội</p>
+    </div>
+  </footer>
+  <section class="u-backlink u-clearfix u-grey-80">
+    <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+      <span>Website Templates</span>
+    </a>
+    <p class="u-text">
+      <span>created with</span>
+    </p>
+    <a class="u-link" href="" target="_blank">
+      <span>Website Builder Software</span>
+    </a>.
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script>
+    function readFile() {
+  
+      if (this.files && this.files[0]) {
+        
+        var FR= new FileReader();
+        
+        FR.addEventListener("load", function(e) {
+          document.getElementById("pre-img").src       = e.target.result;
+          // document.getElementById("b64").innerHTML = e.target.result;
+          console.log(e.target.result);
+          document.getElementById("img").setAttribute('value', e.target.result);
+        }); 
+        
+        FR.readAsDataURL( this.files[0] );
+      }
+      
+    }
+
+    document.getElementById("inp").addEventListener("change", readFile);
+  </script>
+
+</body>
+
+</html>
