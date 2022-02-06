@@ -52,3 +52,4 @@ Người quản lý thêm sinh viên bằng cách điền tên và thêm ảnh c
 
 ![image](https://user-images.githubusercontent.com/59023235/152696216-e7342e55-ec67-4f3e-b91e-6ef5a8a9e632.png)
 
+Khi sinh viên xuất hiện trong camera, hệ thống sẽ đánh giá là đã có mặt, và hiển thị tích xanh tương ứng trong danh sách phía dưới. 
